@@ -1,0 +1,34 @@
+{
+  "name": "hijri-datepicker",
+  "version": "0.0.1",
+  "description": "The 'Hijri Datepicker' is a user interface component designed to facilitate the selection and display of Hijri (Islamic) dates in applications. It offers a visual calendar interface that enables users to easily choose dates according to the Hijri calendar system.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/datepicker-hijri/datepicker-hijri.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "^1.3.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.0.6",
+    "moment-hijri": "^2.1.2",
+    "popper.js": "^1.16.0",
+    "uuid": "^3.3.3"
+  }
+}
