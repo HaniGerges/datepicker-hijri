@@ -30,5 +30,20 @@
     "moment-hijri": "^2.1.2",
     "popper.js": "^1.16.0",
     "uuid": "^3.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaniGerges/datepicker-hijri.git"
+  },
+  "keywords": [
+    "Hijri",
+    "Datepicker",
+    "تاريخ",
+    "هجري"
+  ],
+  "author": "Hani Gerges",
+  "bugs": {
+    "url": "https://github.com/HaniGerges/datepicker-hijri/issues"
+  },
+  "homepage": "https://github.com/HaniGerges/datepicker-hijri#readme"
 }
