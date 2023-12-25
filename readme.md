@@ -9,7 +9,7 @@
 * Use CDN
 
 ```html 
-<script src="https://cdn.jsdelivr.net/gh/abublihi/datepicker-hijri@v1.1/build/datepicker-hijri.js"></script>
+
 ```
 * Download files
 
@@ -29,7 +29,12 @@
 | placement       |    no    | the placement of the the datepicker 'bottom', 'top', 'right', 'left' and 'auto' `default:` bottom, you can use any placement in [popper.js](https://popper.js.org/popper-documentation.html#Popper.placements) |
 | date-format     |    no    | the date format, it is string, `default:` iYYYY/iMM/iDD, any format in [moment-hijri](https://github.com/xsoh/moment-hijri) will work|
 | selected-date   |    no    | the selected date it is string with the same format of `date-format` prop |
+| placeholder   |    no    |  |
+
 | on-date-select-close   |    no    | if you want the datepicker to disapeare on chosing the date only add `on-date-select-close` |
+| auto-set-selected-date   |    no    | if you want the datepicker to auto send initial value for today
+ `auto-set-selected-date` |
+
 
 
 ## Example
@@ -51,7 +56,6 @@ in any change on the date, will be firing a `change` event. so you can listen an
 <datepicker-hijri reference="calender" placement="bottom" date-format="iYYYY/iMM/iDD" selected-date="1441/02/01"></datepicker-hijri>
 ```
 ## Demo 
-[Codepen Hijridate picker](https://codepen.io/abublihi/pen/RwwMJwz)
 
 ![Demo Image](https://i.ibb.co/SmZwqfH/hijri-datepicker-1.gif)
 
