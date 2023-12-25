@@ -7,13 +7,14 @@
 
 ## Properties
 
-| Property                | Attribute                  | Description       | Type     | Default           |
-| ----------------------- | -------------------------- | ----------------- | -------- | ----------------- |
-| `dateFormat`            | `date-format`              |                   | `string` | `'iYYYY/iMM/iDD'` |
-| `langCode`              | `lang-code`                | The language code | `string` | `'ar'`            |
-| `placeholder`           | `placeholder`              |                   | `string` | `''`              |
-| `selectedDate`          | `selected-date`            |                   | `string` | `''`              |
-| `setParentSelectedDate` | `set-parent-selected-date` |                   | `any`    | `undefined`       |
+| Property                | Attribute                  | Description       | Type     | Default             |
+| ----------------------- | -------------------------- | ----------------- | -------- | ------------------- |
+| `calendarDateFormat`    | `calendar-date-format`     |                   | `string` | `"iMM iMMMM iYYYY"` |
+| `dateFormat`            | `date-format`              |                   | `string` | `"iYYYY/iMM/iDD"`   |
+| `langCode`              | `lang-code`                | The language code | `string` | `"ar"`              |
+| `placeholder`           | `placeholder`              |                   | `string` | `""`                |
+| `selectedDate`          | `selected-date`            |                   | `string` | `""`                |
+| `setParentSelectedDate` | `set-parent-selected-date` |                   | `any`    | `undefined`         |
 
 
 ## Dependencies
