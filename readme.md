@@ -9,7 +9,7 @@
 * Use CDN
 
 ```html 
-
+<script src="https://cdn.jsdelivr.net/npm/hijri-datepicker-component@0.0.1/dist/datepicker-hijri/datepicker-hijri.js"></script>
 ```
 * Download files
 
@@ -56,6 +56,7 @@ in any change on the date, will be firing a `change` event. so you can listen an
 <datepicker-hijri reference="calender" placement="bottom" date-format="iYYYY/iMM/iDD" selected-date="1441/02/01"></datepicker-hijri>
 ```
 ## Demo 
+<!-- [Codepen Hijridate picker](https://codepen.io/abublihi/pen/RwwMJwz) -->
 
 ![Demo Image](https://i.ibb.co/SmZwqfH/hijri-datepicker-1.gif)
 
