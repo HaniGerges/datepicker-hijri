@@ -65,10 +65,24 @@ export class DateCalender {
   getMonthName(format = "iMM iMMMM iYYYY") {
     return this.currentTime.format(format);
   }
+  getSelectedDay() {
+    let time = this.currentTime;
+    let date = time.iDate();
+
+    if (this.selectedDate) {
+      time = moment(this.selectedDate, this.dateFormat);
+      date = time.iDate();
+    }
+    if (date > this.currentTime.iDaysInMonth()) {
+      date = 1;
+    }
+    return date;
+  }
 
   handleYearChange = (event) => {
     let time = this.currentTime;
     time.iYear(parseInt(event.target.value, 10));
+    time.iDate(parseInt(this.getSelectedDay(), 10));
     const selectedDate = time.format(this.dateFormat);
     this.selectedDate = selectedDate;
     this.setParentSelectedDate(this.selectedDate);
@@ -77,6 +91,7 @@ export class DateCalender {
   handleMonthChange = (event) => {
     let time = this.currentTime;
     time.iMonth(parseInt(event.target.value, 10));
+    time.iDate(parseInt(this.getSelectedDay(), 10));
     const selectedDate = time.format(this.dateFormat);
     this.selectedDate = selectedDate;
     this.setParentSelectedDate(this.selectedDate);
@@ -93,7 +108,9 @@ export class DateCalender {
           >
             {"<"}
           </button>
-          <strong class="month-name">{this.getMonthName(this.calendarDateFormat)}</strong>
+          <strong class="month-name">
+            {this.getMonthName(this.calendarDateFormat)}
+          </strong>
           <button
             class="control-button next-button"
             onClick={this.addMonth}
