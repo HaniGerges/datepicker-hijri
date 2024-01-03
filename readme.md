@@ -32,6 +32,8 @@
 | placeholder   |    no    |  |
 | on-date-select-close   |    no    | if you want the datepicker to disapeare on chosing the date only add |
 | auto-set-selected-date   |    no    | if you want the datepicker to auto send initial value for today |
+| min-date   |    no    | if you want the datepicker to set minimum date |
+| max-date   |    no    | if you want the datepicker to set maximum date |
 
 
 ## Example
@@ -53,7 +55,7 @@ in any change on the date, will be firing a `change` event. so you can listen an
 <datepicker-hijri reference="calender" placement="bottom" date-format="iYYYY/iMM/iDD" selected-date="1441/02/01"></datepicker-hijri>
 ```
 ## Demo 
-<!-- [Codepen Hijridate picker](https://codepen.io/abublihi/pen/RwwMJwz) -->
+[Codepen Hijridate picker](https://codepen.io/hanigerges/pen/BabjaOQ)
 
 ![Demo Image](https://i.ibb.co/SmZwqfH/hijri-datepicker-1.gif)
 
