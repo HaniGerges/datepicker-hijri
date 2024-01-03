@@ -9,7 +9,7 @@
 * Use CDN
 
 ```html 
-<script src="https://cdn.jsdelivr.net/npm/hijri-datepicker-component@0.0.1/dist/datepicker-hijri/datepicker-hijri.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hijri-datepicker-component@0.0.3/dist/datepicker-hijri/datepicker-hijri.js"></script>
 ```
 * Download files
 
@@ -30,11 +30,8 @@
 | date-format     |    no    | the date format, it is string, `default:` iYYYY/iMM/iDD, any format in [moment-hijri](https://github.com/xsoh/moment-hijri) will work|
 | selected-date   |    no    | the selected date it is string with the same format of `date-format` prop |
 | placeholder   |    no    |  |
-
-| on-date-select-close   |    no    | if you want the datepicker to disapeare on chosing the date only add `on-date-select-close` |
-| auto-set-selected-date   |    no    | if you want the datepicker to auto send initial value for today
- `auto-set-selected-date` |
-
+| on-date-select-close   |    no    | if you want the datepicker to disapeare on chosing the date only add |
+| auto-set-selected-date   |    no    | if you want the datepicker to auto send initial value for today |
 
 
 ## Example
