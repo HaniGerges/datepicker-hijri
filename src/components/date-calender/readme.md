@@ -12,6 +12,8 @@
 | `calendarDateFormat`    | `calendar-date-format`     |                   | `string` | `"iMM iMMMM iYYYY"` |
 | `dateFormat`            | `date-format`              |                   | `string` | `"iYYYY/iMM/iDD"`   |
 | `langCode`              | `lang-code`                | The language code | `string` | `"ar"`              |
+| `maxDate`               | `max-date`                 |                   | `string` | `""`                |
+| `minDate`               | `min-date`                 |                   | `string` | `""`                |
 | `placeholder`           | `placeholder`              |                   | `string` | `""`                |
 | `selectedDate`          | `selected-date`            |                   | `string` | `""`                |
 | `setParentSelectedDate` | `set-parent-selected-date` |                   | `any`    | `undefined`         |

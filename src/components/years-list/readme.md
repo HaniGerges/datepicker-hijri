@@ -10,7 +10,10 @@
 | Property           | Attribute            | Description | Type  | Default     |
 | ------------------ | -------------------- | ----------- | ----- | ----------- |
 | `currentTime`      | `current-time`       |             | `any` | `undefined` |
+| `dateFormat`       | `date-format`        |             | `any` | `undefined` |
 | `handleYearChange` | `handle-year-change` |             | `any` | `undefined` |
+| `maxDate`          | `max-date`           |             | `any` | `undefined` |
+| `minDate`          | `min-date`           |             | `any` | `undefined` |
 
 
 ## Dependencies

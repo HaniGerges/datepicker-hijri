@@ -10,7 +10,11 @@
 | Property            | Attribute             | Description | Type  | Default     |
 | ------------------- | --------------------- | ----------- | ----- | ----------- |
 | `currentTime`       | `current-time`        |             | `any` | `undefined` |
+| `dateFormat`        | `date-format`         |             | `any` | `undefined` |
 | `handleMonthChange` | `handle-month-change` |             | `any` | `undefined` |
+| `maxDate`           | `max-date`            |             | `any` | `undefined` |
+| `minDate`           | `min-date`            |             | `any` | `undefined` |
+| `selectedDate`      | `selected-date`       |             | `any` | `undefined` |
 
 
 ## Dependencies
