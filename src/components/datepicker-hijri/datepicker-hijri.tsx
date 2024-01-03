@@ -12,6 +12,8 @@ export class DatepickerHijri {
   @Prop() placement: Placement = "bottom";
   @Prop() reference: string;
   @Prop({ reflect: true }) selectedDate: string = "";
+  @Prop({ reflect: true }) minDate: string = "";
+  @Prop({ reflect: true }) maxDate: string = "";
   @Prop({ reflect: true }) langCode: string = "ar";
   @Prop({ reflect: true }) dateFormat: string = "iYYYY/iMM/iDD";
   @Prop() onDateSelectClose: boolean = false;
@@ -112,6 +114,8 @@ export class DatepickerHijri {
           dateFormat={this.dateFormat}
           placeholder={this.placeholder}
           selectedDate={this.selectedDate}
+          minDate={this.minDate}
+          maxDate={this.maxDate}
           setParentSelectedDate={this.setSelectedDate}
         ></date-calender>
       </div>

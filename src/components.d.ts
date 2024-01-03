@@ -19,6 +19,8 @@ export namespace Components {
     * The language code
     */
     'langCode': string;
+    'maxDate': string;
+    'minDate': string;
     'placeholder': string;
     'selectedDate': string;
     'setParentSelectedDate': any;
@@ -27,6 +29,8 @@ export namespace Components {
     'autoSetSelectedDate': boolean;
     'dateFormat': string;
     'langCode': string;
+    'maxDate': string;
+    'minDate': string;
     'onDateSelectClose': boolean;
     'placeholder': string;
     'placement': Placement;
@@ -42,16 +46,25 @@ export namespace Components {
   interface MonthDays {
     'currentTime': any;
     'dateFormat': any;
+    'maxDate': string;
+    'minDate': string;
     'selectedDate': any;
     'setSelectedDate': any;
   }
   interface MonthsList {
     'currentTime': any;
+    'dateFormat': any;
     'handleMonthChange': any;
+    'maxDate': any;
+    'minDate': any;
+    'selectedDate': any;
   }
   interface YearsList {
     'currentTime': any;
+    'dateFormat': any;
     'handleYearChange': any;
+    'maxDate': any;
+    'minDate': any;
   }
 }
 
@@ -111,6 +124,8 @@ declare namespace LocalJSX {
     * The language code
     */
     'langCode'?: string;
+    'maxDate'?: string;
+    'minDate'?: string;
     'placeholder'?: string;
     'selectedDate'?: string;
     'setParentSelectedDate'?: any;
@@ -119,6 +134,8 @@ declare namespace LocalJSX {
     'autoSetSelectedDate'?: boolean;
     'dateFormat'?: string;
     'langCode'?: string;
+    'maxDate'?: string;
+    'minDate'?: string;
     'onDateSelectClose'?: boolean;
     'placeholder'?: string;
     'placement'?: Placement;
@@ -134,16 +151,25 @@ declare namespace LocalJSX {
   interface MonthDays {
     'currentTime'?: any;
     'dateFormat'?: any;
+    'maxDate'?: string;
+    'minDate'?: string;
     'selectedDate'?: any;
     'setSelectedDate'?: any;
   }
   interface MonthsList {
     'currentTime'?: any;
+    'dateFormat'?: any;
     'handleMonthChange'?: any;
+    'maxDate'?: any;
+    'minDate'?: any;
+    'selectedDate'?: any;
   }
   interface YearsList {
     'currentTime'?: any;
+    'dateFormat'?: any;
     'handleYearChange'?: any;
+    'maxDate'?: any;
+    'minDate'?: any;
   }
 
   interface IntrinsicElements {

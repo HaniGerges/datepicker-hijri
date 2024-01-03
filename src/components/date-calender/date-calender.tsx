@@ -26,7 +26,10 @@ export class DateCalender {
   @Prop({ reflect: true }) dateFormat: string = "iYYYY/iMM/iDD";
   @Prop({ reflect: true }) calendarDateFormat: string = "iMM iMMMM iYYYY";
   @Prop({ reflect: true }) selectedDate: string = "";
+  @Prop({ reflect: true }) minDate: string = "";
+  @Prop({ reflect: true }) maxDate: string = "";
   @Prop({ reflect: true }) placeholder: string = "";
+
   @Prop() setParentSelectedDate;
 
   @State() currentTime = moment(this.selectedDate, this.dateFormat);
@@ -122,10 +125,17 @@ export class DateCalender {
           <div>
             <years-list
               currentTime={this.currentTime}
+              dateFormat={this.dateFormat}
+              minDate={this.minDate}
+              maxDate={this.maxDate}
               handleYearChange={this.handleYearChange}
             ></years-list>
             <months-list
               currentTime={this.currentTime}
+              dateFormat={this.dateFormat}
+              selectedDate={this.selectedDate}
+              minDate={this.minDate}
+              maxDate={this.maxDate}
               handleMonthChange={this.handleMonthChange}
             ></months-list>
           </div>
@@ -135,6 +145,8 @@ export class DateCalender {
           currentTime={this.currentTime}
           dateFormat={this.dateFormat}
           selectedDate={this.selectedDate}
+          minDate={this.minDate}
+          maxDate={this.maxDate}
           setSelectedDate={this.setSelectedDate}
         ></month-days>
       </div>
