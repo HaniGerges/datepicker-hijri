@@ -1,6 +1,6 @@
 {
   "name": "hijri-datepicker-component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The 'Hijri Datepicker' is a user interface component designed to facilitate the selection and display of Hijri (Islamic) dates in applications. It offers a visual calendar interface that enables users to easily choose dates according to the Hijri calendar system.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
