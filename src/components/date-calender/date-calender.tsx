@@ -24,7 +24,7 @@ export class DateCalender {
    */
   @Prop({ reflect: true }) langCode: string = "ar";
   @Prop({ reflect: true }) dateFormat: string = "iYYYY/iMM/iDD";
-  @Prop({ reflect: true }) calendarDateFormat: string = "iMM iMMMM iYYYY";
+  @Prop({ reflect: true }) calendarDateFormat: string = "iDD iMMMM iYYYY";
   @Prop({ reflect: true }) selectedDate: string = "";
   @Prop({ reflect: true }) minDate: string = "";
   @Prop({ reflect: true }) maxDate: string = "";
@@ -65,7 +65,7 @@ export class DateCalender {
     return time.format("dd");
   }
 
-  getMonthName(format = "iMM iMMMM iYYYY") {
+  getMonthName(format = "iDD iMMMM iYYYY") {
     return this.currentTime.format(format);
   }
   getSelectedDay() {

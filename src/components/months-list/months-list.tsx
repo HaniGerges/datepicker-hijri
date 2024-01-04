@@ -30,7 +30,7 @@ export class YearsList {
   @Prop() handleMonthChange;
   @Watch("selectedDate")
   handleMinAndMaxDate(month: number) {
-    let time = this.currentTime;
+    let time = moment(this.selectedDate, this.dateFormat);
     time.iMonth(month);
     let formatedTime = time.format(this.dateFormat);
 
@@ -63,13 +63,17 @@ export class YearsList {
 
   render() {
     let monthsList = [];
+    console.log(
+      "🚀 ~ file: months-list.tsx:67 ~ YearsList ~ render ~ this.currentTime.iMonth():",
+      this.currentTime.iMonth()
+    );
     for (let i = 0; i < this.months.length; i++) {
       monthsList.push(
         <option
           key={this.months[i].number}
-          disabled={this.handleMinAndMaxDate(i)}
           value={this.months[i].number}
           selected={this.currentTime.iMonth() == this.months[i].number}
+          disabled={this.handleMinAndMaxDate(i)}
         >
           {this.months[i].name}
         </option>
