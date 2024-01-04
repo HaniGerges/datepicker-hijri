@@ -50,7 +50,7 @@ export class MonthDays {
         this.dateFormat
       );
 
-      return moment(this.maxDate).isSameOrAfter(formatedTime);
+      return moment(this.maxDate).isSameOrBefore(formatedTime);
     }
     if (this.maxDate && this.minDate) {
       this.maxDate = moment(this.maxDate, this.dateFormat).format(
