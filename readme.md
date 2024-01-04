@@ -9,7 +9,7 @@
 * Use CDN
 
 ```html 
-<script src="https://cdn.jsdelivr.net/npm/hijri-datepicker-component@0.0.6/dist/datepicker-hijri/datepicker-hijri.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/hijri-datepicker-component@latest/dist/datepicker-hijri/datepicker-hijri.js"></script>
 ```
 * Download files
 
