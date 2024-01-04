@@ -9,7 +9,7 @@
 
 | Property                | Attribute                  | Description       | Type     | Default             |
 | ----------------------- | -------------------------- | ----------------- | -------- | ------------------- |
-| `calendarDateFormat`    | `calendar-date-format`     |                   | `string` | `"iMM iMMMM iYYYY"` |
+| `calendarDateFormat`    | `calendar-date-format`     |                   | `string` | `"iDD iMMMM iYYYY"` |
 | `dateFormat`            | `date-format`              |                   | `string` | `"iYYYY/iMM/iDD"`   |
 | `langCode`              | `lang-code`                | The language code | `string` | `"ar"`              |
 | `maxDate`               | `max-date`                 |                   | `string` | `""`                |
