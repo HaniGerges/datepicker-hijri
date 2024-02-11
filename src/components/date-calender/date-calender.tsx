@@ -35,20 +35,57 @@ export class DateCalender {
   @State() currentTime = moment(this.selectedDate, this.dateFormat);
 
   subtractMonth = () => {
-    let currentTime = moment(
-      this.currentTime.format(this.dateFormat),
-      this.dateFormat
-    );
-    this.currentTime = currentTime.subtract(1, "iMonth");
+    let time = this.currentTime;
+    time.iMonth(time.iMonth() - 1);
+    time.iDate(parseInt(this.getSelectedDay(), 10));
+    if (this.minDate) {
+      const minDate = moment(this.minDate, this.dateFormat);
+      if (time.isBefore(minDate, "month")) {
+        return;
+      }
+    }
+    this.currentTime = time;
+    const selectedDate = time.format(this.dateFormat);
+    this.selectedDate = selectedDate;
   };
 
   addMonth = () => {
-    let currentTime = moment(
-      this.currentTime.format(this.dateFormat),
-      this.dateFormat
-    );
-    this.currentTime = currentTime.add(1, "iMonth");
+    let time = this.currentTime;
+    time.iMonth(time.iMonth() + 1);
+    time.iDate(parseInt(this.getSelectedDay(), 10));
+    // check if the selected date is in the newer than max date
+    if (this.maxDate) {
+      const maxDate = moment(this.maxDate, this.dateFormat);
+      if (time.isAfter(maxDate, "month")) {
+        return;
+      }
+    }
+    this.currentTime = time;
+    const selectedDate = time.format(this.dateFormat);
+    this.selectedDate = selectedDate;
   };
+
+  validateMinDate() {
+    let time = this.currentTime;
+    time.iMonth(time.iMonth() - 1);
+    time.iDate(parseInt(this.getSelectedDay(), 10));
+    if (this.minDate) {
+      const minDate = moment(this.minDate, this.dateFormat);
+      return time.isSameOrBefore(minDate, "month");
+    }
+    return false;
+  }
+
+  validateMaxDate() {
+    let time = this.currentTime;
+    time.iMonth(time.iMonth() + 1);
+    time.iDate(parseInt(this.getSelectedDay(), 10));
+    if (this.maxDate) {
+      const maxDate = moment(this.maxDate, this.dateFormat);
+      return time.isSameOrAfter(maxDate, "month");
+    }
+    return false;
+  }
 
   setSelectedDate = (event) => {
     let time = this.currentTime;
@@ -108,6 +145,7 @@ export class DateCalender {
             class="control-button previous-button"
             onClick={this.subtractMonth}
             type="button"
+            disabled={this.validateMinDate()}
           >
             {"<"}
           </button>
@@ -118,6 +156,7 @@ export class DateCalender {
             class="control-button next-button"
             onClick={this.addMonth}
             type="button"
+            disabled={this.validateMaxDate()}
           >
             {" "}
             {">"}{" "}
