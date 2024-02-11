@@ -43,14 +43,14 @@ export class MonthDays {
       this.minDate = moment(this.minDate, this.dateFormat).format(
         this.dateFormat
       );
-      return moment(this.minDate).isSameOrAfter(formatedTime);
+      return moment(this.minDate).isAfter(formatedTime);
     }
     if (this.maxDate && !this.minDate) {
       this.maxDate = moment(this.maxDate, this.dateFormat).format(
         this.dateFormat
       );
 
-      return moment(this.maxDate).isSameOrBefore(formatedTime);
+      return moment(this.maxDate).isBefore(formatedTime);
     }
     if (this.maxDate && this.minDate) {
       this.maxDate = moment(this.maxDate, this.dateFormat).format(

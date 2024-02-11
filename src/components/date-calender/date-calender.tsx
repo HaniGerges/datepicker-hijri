@@ -103,7 +103,7 @@ export class DateCalender {
   }
 
   getMonthName(format = "iDD iMMMM iYYYY") {
-    return this.currentTime.format(format);
+    return moment(this.selectedDate, this.dateFormat).format(format);
   }
   getSelectedDay() {
     let time = this.currentTime;

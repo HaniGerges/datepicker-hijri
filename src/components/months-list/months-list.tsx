@@ -63,10 +63,6 @@ export class YearsList {
 
   render() {
     let monthsList = [];
-    console.log(
-      "🚀 ~ file: months-list.tsx:67 ~ YearsList ~ render ~ this.currentTime.iMonth():",
-      this.currentTime.iMonth()
-    );
     for (let i = 0; i < this.months.length; i++) {
       monthsList.push(
         <option
