@@ -7,13 +7,12 @@
 
 # Installation
 
-## Stand alone: 
-
 * Use NPM
 
 ```html 
  npm i hijri-datepicker-component
 ```
+## Stand alone: 
 
 * Use CDN
 
